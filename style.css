@@ -1,0 +1,70 @@
+.ctnBack {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.child {
+    height: 50px;
+    box-sizing: border-box;
+    width: 100vw;
+    background-color: blue;
+}
+#child1{
+    background-color: white;
+    border-bottom: 2px solid orange;
+}#child2{
+    background-color: white;
+}#child3{
+    background-color: silver;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media screen all (max-width: 992px){
+    header{
+        width: 100%;
+    }
+}
+
+.ctnMenu {
+    z-index: 1;
+    height: 150px;
+    width: 992px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+
+.menu1, .menu2{
+    height: 50px;
+    border: 1px solid green;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+} 
+.menu1 li, .menu2 li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+}
+.menu1 {
+    width: 660px;
+}
+.menu2 {
+    width: 560px;
+}
+
+.search, .follow {
+    height: 50px;
+    width: 150px;
+    border: 1px solid green;
+}

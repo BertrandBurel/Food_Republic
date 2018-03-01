@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .ctnBack {
     z-index: 0;
     position: absolute;
@@ -91,9 +95,24 @@
     position: absolute;
     left: 0;
     top: 0;
-    background-color: black;
     width: 220px;
     height: 100vh;
+}
+.caseBurger{
+    height: 52px;
+    color: white;
+    font-weight: bold;
+    padding-top: 15px;
+    font-size: 15px;
+    border-bottom: 1px solid #666;
+    box-sizing: border-box;
+    background-color: #303030 ;
+}
+.limite{
+    border-top: 2px solid #666;
+}
+#mailBurger{
+    background-color: #666;
 }
 
 @media screen and (max-width: 810px){

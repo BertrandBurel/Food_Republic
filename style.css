@@ -123,6 +123,29 @@ span{
     width: 220px;
     height: 100vh;
 }
+#menuBurger a{
+    text-decoration: none;
+    color: white;
+}
+.fb{
+    margin-top: -10px;
+    margin-left: -10px;
+}
+.twit{
+    margin-top: -10px;
+    margin-left: -5px;
+    margin-right: 10px;
+}
+.insta{
+    margin-top: -10px;
+    margin-left: -2px;
+    margin-right: 13px;
+}
+.goop{
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: 5px;
+}
 .caseBurger{
     height: 52px;
     color: white;
@@ -160,7 +183,6 @@ span{
 
 .banner{
     width: auto;
-    height: 700px;
     display: flex;
 }
 .bannerHaut{

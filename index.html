@@ -7,12 +7,13 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="ctnBack"><div class="child" id="child1"></div><div class="child" id="child2"></div><div class="child" id="child3"></div></div>
+        <div class="ctnBack"><div class="childs" id="child1"></div><div class="childs" id="child2"></div><div class="childs" id="child3"></div></div>
         <div class="boiteMenu">
         <div class="ctnMenu"> 
             <nav>
                 <ul class="menu1">
-                    <li><a href="#">Home</a></li>
+                    <img id="logo" src="img/food-republic.png" alt="logo du site" />
+                    <li><a href="#"><span>Home</span></a></li>
                     <li><a href="#">Podcasts</a></li>
                     <li><a href="#">Food</a></li>
                     <li><a href="#">Drink</a></li>
@@ -25,7 +26,7 @@
             <div class="search"></div>
             <nav>
                 <ul class="menu2">
-                    <li>Hot :</li>
+                    <li><span>Hot :</span></li>
                     <li><a href="#">Food Republic Today</a></li>
                     <li><a href="#">How Tos</a></li>
                     <li><a href="#">The Meal Plan</a></li>
@@ -35,9 +36,11 @@
                 <div class="follow"></div>
         </div>
         </div>
+
+        <!-- barreMenu s'affiche uniquement en mobile -->
         <div id="barreMenu">
             <button type="button" id="btnBurger"><img src="img/burger.png" alt="bouton menu burger" height="35px" width="35px" /></button>
-            <img id="logo" src="img/food-republic.png" alt="logo du site" height="50px" width="50px" />
+            <img id="logoMobile" src="img/food-republic.png" alt="logo du site" height="50px" width="50px" />
             <img class="centerIcon" src="img/loupe.png" alt="search" height="35px" width="35px" />
         </div>
         <!-- menuBurger s'affiche uniquement au format mobile -->
@@ -63,13 +66,29 @@
                     <div class="col-12 caseBurger"><Img:srcset>Instagram</Img:srcset></div>
                     <div class="col-12 caseBurger">Google</div>
                     <!-- menu Newsletter à la suite -->
+                    <div class="col-12 caseBurger">Facebook</div>
+                    <div class="col-12 caseBurger">Twitter</div>
+                    <div class="col-12 caseBurger">Instagram</div>
+                    <div class="col-12 caseBurger">Google Plus</div>
                     <div class="col-12 caseBurger" id="mailBurger">Get The Lastest</div>
                 </div>
-
             </div>
-
         </div>
-        
+        <!-- banner -->
+        <div class="banner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 bannerHaut"></div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-10 col-sm-8 bannerBas">
+                        <p class="ban1"><a href="#">Los Angeles</a></p>
+                        <p class="ban2"><a href="#">Los Angeles Bagel Culture gets a cream cheese infusion</a></p>
+                        <p class="ban3"><a href="#">Jess Kapadia </a>| March 2, 2018</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     <script src="main.js"></script>

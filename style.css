@@ -1,3 +1,7 @@
+*{
+    font-family: Helvetica, sans-serif;
+}
+
 body{
     overflow-x: hidden;
 }
@@ -8,7 +12,7 @@ body{
     left: 0;
     top: 0;
 }
-.child {
+.childs {
     height: 50px;
     box-sizing: border-box;
     width: 100vw;
@@ -16,11 +20,11 @@ body{
 }
 #child1{
     background-color: white;
-    border-bottom: 2px solid orange;
+    border-bottom: 3px solid orange;
 }#child2{
     background-color: white;
 }#child3{
-    background-color: silver;
+    background-color: #f2f2f2;
 }
 
 .boiteMenu{
@@ -37,17 +41,18 @@ body{
 .ctnMenu {
     z-index: 1;
     height: 150px;
-    width: 992px;
+    width: 1242px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-end;
 }
-
+.ctnMenu a{
+    text-decoration: none;
+    font-weight: 600;
+}
 .menu1, .menu2{
     height: 50px;
-    border: 1px solid green;
-    box-sizing: border-box;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -61,10 +66,17 @@ body{
     list-style-type: none;
 }
 .menu1 {
-    width: 660px;
+    width: 740px;
+    font-size: 15px;
+}.menu1 li a{ 
+    color: black;
 }
 .menu2 {
-    width: 560px;
+    width: 600px;
+    padding-left: 140px;
+    font-size: 13px;   
+}.menu2 li a{
+    color: #666; 
 }
 
 .search, .follow {
@@ -72,7 +84,20 @@ body{
     width: 150px;
     border: 1px solid green;
 }
-
+.search{
+    background-color: red;
+}
+.follow{
+    background-color: indigo;
+}
+span{
+    color:orange;
+}
+#logo{
+    height:105px;
+    width: 105px;
+}
+/* barreMenu est celle visible en mobile */
 #barreMenu{
     display: none;
     width: 100vw;
@@ -84,7 +109,7 @@ body{
     background-color: white;
     border: none;
 }
-#logo{
+#logoMobile{
     margin-top: 5px;
 }
 .centerIcon{
@@ -125,5 +150,56 @@ body{
     #barreMenu{
         display: flex;
         justify-content: space-between;
+    }
+}
+@media screen and (max-width: 890px){
+    .search{
+        width: 50px;
+    }
+}
+
+.banner{
+    width: auto;
+    height: 700px;
+    display: flex;
+}
+.bannerHaut{
+    background-image: url("img/ColdestBeer.jpg");
+    height: 35vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bannerBas{
+    background-color: rgba(48,48,48,0.9);
+    margin-top: -40px;
+    border-top: 2px solid orange;
+    padding-top: 10px;
+}
+.ban1 a{
+    text-decoration: none;
+    color: #d9d9d9;
+    text-transform: uppercase;
+    font-size: 13px
+}
+.ban2 a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 24px
+}
+.ban3 a, .ban3{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+.ban1, .ban2, .ban3{
+    margin: 0;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1040px){
+    .banner{
+        padding-left: 8vw;
+        padding-right: 8vw;
     }
 }

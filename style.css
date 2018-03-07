@@ -28,7 +28,7 @@ body{
     display: flex;
     justify-content: center;
 }
-@media screen all (max-width: 992px){
+@media screen and (max-width: 992px){
     .boiteMenu{
         width: 100%;
     }

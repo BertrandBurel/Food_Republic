@@ -157,3 +157,49 @@ span{
         width: 50px;
     }
 }
+
+.banner{
+    width: auto;
+    height: 700px;
+    display: flex;
+}
+.bannerHaut{
+    background-image: url("img/ColdestBeer.jpg");
+    height: 35vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bannerBas{
+    background-color: rgba(48,48,48,0.9);
+    margin-top: -40px;
+    border-top: 2px solid orange;
+    padding-top: 10px;
+}
+.ban1 a{
+    text-decoration: none;
+    color: #d9d9d9;
+    text-transform: uppercase;
+    font-size: 13px
+}
+.ban2 a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 24px
+}
+.ban3 a, .ban3{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+.ban1, .ban2, .ban3{
+    margin: 0;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1040px){
+    .banner{
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+}

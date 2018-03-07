@@ -203,3 +203,90 @@ span{
         padding-right: 8vw;
     }
 }
+
+/* section latest ci-dessous */
+
+/* ligne du titre */
+.latestCtn {
+    margin-top: 100px;
+}
+.latestLigne {
+    background-image: url("img/ligneLatest.svg");
+    background-repeat: repeat;
+    height: 25px;
+    display: flex; 
+    justify-content: center;
+}
+.latestLigne p {
+    height: 25px;
+    width: 100px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+}
+/* fin de ligne du titre */
+
+.latest {
+    padding: 0 0 0 0;
+    margin: 40px 10px 20px 10px;
+    height: 100vw;
+}
+.latestImg {
+    position: relative;
+    height: 70%;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img1 {
+    background-image: url("img/drake.jpg");
+    background-size: contain;
+}
+.img2 {
+    background-image: url("img/pump.jpg");
+    background-size: cover;
+}
+.img3 {
+    background-image: url("img/zagat.jpg");
+    background-size: cover;
+}
+
+.latestText {
+    height: 30%;
+    background-color: blue;
+}
+
+.Share { 
+    height: 10vw;
+    width: 10vw;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-image: url("img/share.png"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-color: silver;
+}
+
+@media (min-width: 767px) { 
+
+    .latestArticle1 {
+        height: 35vw;
+    }
+    .latestArticle2 {
+        height: 25vw;
+    }
+    .latestArticle3 {
+        height: 30vw;
+    }
+    .share {
+        height: 2vw;
+        width: 2vw;
+    }
+}
+
+/* FIN de LATEST */
+

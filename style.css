@@ -160,7 +160,6 @@ span{
 
 .banner{
     width: auto;
-    height: 700px;
     display: flex;
 }
 .bannerHaut{
@@ -226,6 +225,7 @@ span{
     text-align: center;
 }
 /* fin de ligne du titre */
+/* DEBUT LATEST */
 
 .latest {
     padding: 0 0 0 0;
@@ -234,7 +234,7 @@ span{
 }
 .latestImg {
     position: relative;
-    height: 70%;
+    height: 80%;
     border: 1px solid silver;
     box-sizing: border-box;
     background-position: center;
@@ -254,8 +254,31 @@ span{
 }
 
 .latestText {
-    height: 30%;
-    background-color: blue;
+    height: 20%;
+}
+.latestText a {
+    text-decoration: none;
+    color: black;
+}
+
+.latestTextTitle {
+    padding-top: 20px;
+    font-size: 2vw;
+    font-weight: bold;
+    color: silver;
+    margin: 0;
+}
+.latestTextPara {
+    font-size: 3.5vw;
+    font-weight: bold;
+    margin: 0;
+}
+.latestTextInfo {
+    font-size: 2vw;
+    margin: 0;
+}
+.latestTextInfo span {
+    color: silver;
 }
 
 .Share { 
@@ -264,28 +287,61 @@ span{
     position: absolute;
     bottom: 0px;
     right: 0px;
-    background-image: url("img/share.png"); 
+    background-image: url("img/share.svg"); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; 
     background-color: silver;
 }
+.share:hover {
+    background-color: orange;
+}
 
 @media (min-width: 767px) { 
 
+    .img1{
+        height: 65%;
+    }
+    .case1 {
+        height: 35%;
+    }
+    .img2{
+        height: 50%;
+    }
+    .case2{
+        height: 50%;
+    }
+    .img3{
+        height: 65%;
+    }
+    .case3 {
+        height: 35%;
+    }
+
     .latestArticle1 {
-        height: 35vw;
+        height: 32vw;
     }
     .latestArticle2 {
-        height: 25vw;
+        height: 22vw;
     }
     .latestArticle3 {
-        height: 30vw;
+        height: 27vw;
     }
     .share {
         height: 2vw;
         width: 2vw;
     }
+
+    .latestTextTitle {
+        font-size: 0.8vw;
+    }
+    .latestTextPara {
+        font-size: 1.5vw;
+    }
+    .latestTextInfo {
+        font-size: 0.8vw;
+    }
+    
 }
 
 /* FIN de LATEST */

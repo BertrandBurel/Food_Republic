@@ -1,94 +1,207 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Food republic</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div class="ctnBack"><div class="childs" id="child1"></div><div class="childs" id="child2"></div><div class="childs" id="child3"></div></div>
-        <div class="boiteMenu">
-        <div class="ctnMenu"> 
+
+<head>
+    <meta charset="utf-8">
+    <title>Food republic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="ctnBack">
+        <div class="childs" id="child1"></div>
+        <div class="childs" id="child2"></div>
+        <div class="childs" id="child3"></div>
+    </div>
+    <div class="boiteMenu">
+        <div class="ctnMenu">
             <nav>
                 <ul class="menu1">
                     <img id="logo" src="img/food-republic.png" alt="logo du site" />
-                    <li><a href="#"><span>Home</span></a></li>
-                    <li><a href="#">Podcasts</a></li>
-                    <li><a href="#">Food</a></li>
-                    <li><a href="#">Drink</a></li>
-                    <li><a href="#">Recipes</a></li>
-                    <li><a href="#">Travel</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Video</a></li>
+                    <li>
+                        <a href="#">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Podcasts</a>
+                    </li>
+                    <li>
+                        <a href="#">Food</a>
+                    </li>
+                    <li>
+                        <a href="#">Drink</a>
+                    </li>
+                    <li>
+                        <a href="#">Recipes</a>
+                    </li>
+                    <li>
+                        <a href="#">Travel</a>
+                    </li>
+                    <li>
+                        <a href="#">People</a>
+                    </li>
+                    <li>
+                        <a href="#">Video</a>
+                    </li>
                 </ul>
             </nav>
-            <div class="search"></div>
+            <div class="search">
+                <nav>
+                    <ul>
+                        <li class ="mailSearch">
+                            <a href="#"><span>Get the Latest!</span><img src="img/mail.png"></a>
+                        </li>
+                        <li class ="loupeSearch">
+                            <a href="#" ><img src="img/loupe.png"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <nav>
                 <ul class="menu2">
-                    <li><span>Hot :</span></li>
-                    <li><a href="#">Food Republic Today</a></li>
-                    <li><a href="#">How Tos</a></li>
-                    <li><a href="#">The Meal Plan</a></li>
-                    <li><a href="#">Recommended</a></li>
+                    <li>
+                        <span>Hot :</span>
+                    </li>
+                    <li>
+                        <a href="#">Food Republic Today</a>
+                    </li>
+                    <li>
+                        <a href="#">How Tos</a>
+                    </li>
+                    <li>
+                        <a href="#">The Meal Plan</a>
+                    </li>
+                    <li>
+                        <a href="#">Recommended</a>
+                    </li>
                 </ul>
             </nav>
-                <div class="follow">
+            <div class="follow">
+                <nav>
+                    <ul>
+                        <li>
+                            <span>Follow : </span>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/F.Republic">
+                                <img class="fbb" src="img/fb-black.png">
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/foodrepublic">
+                                <img class="twitb" src="img/twitter-black.png">
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/foodrepublic/">
+                                <img class="instab" src="img/instagram-black.png">
+                        </li>
+                        <li>
+                            <a href="htpps://plus.google.com/+FoodRepublic/posts">
+                                <img class="goopb" src="img/googlep-black.png">
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
 
+    <!-- barreMenu s'affiche uniquement en mobile -->
+    <div id="barreMenu">
+        <button type="button" id="btnBurger">
+            <img src="img/burger.png" alt="bouton menu burger" height="35px" width="35px" />
+        </button>
+        <img id="logoMobile" src="img/food-republic.png" alt="logo du site" height="50px" width="50px" />
+        <img class="centerIcon" src="img/loupe.png" alt="search" height="35px" width="35px" />
+    </div>
+    <!-- menuBurger s'affiche uniquement au format mobile -->
+    <div id="menuBurger">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 caseBurger">
+                    <a href="#">Home</a>
                 </div>
-        </div>
-        </div>
-
-        <!-- barreMenu s'affiche uniquement en mobile -->
-        <div id="barreMenu">
-            <button type="button" id="btnBurger"><img src="img/burger.png" alt="bouton menu burger" height="35px" width="35px" /></button>
-            <img id="logoMobile" src="img/food-republic.png" alt="logo du site" height="50px" width="50px" />
-            <img class="centerIcon" src="img/loupe.png" alt="search" height="35px" width="35px" />
-        </div>
-        <!-- menuBurger s'affiche uniquement au format mobile -->
-        <div id="menuBurger">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 caseBurger"><a href="#">Home</a></div>
-                    <div class="col-12 caseBurger"><a href="#">Podcasts</a></div>
-                    <div class="col-12 caseBurger"><a href="#">Food</a></div>
-                    <div class="col-12 caseBurger"><a href="#">Drink</a></div>
-                    <div class="col-12 caseBurger"><a href="#">Recipes</a></div>
-                    <div class="col-12 caseBurger"><a href="#">Travel</a></div>
-                    <div class="col-12 caseBurger"><a href="#">People</a></div>
-                    <div class="col-12 caseBurger"><a href="#">Video</a></div>
-                    <!-- menu2 à la suite -->
-                    <div class="col-12 limite caseBurger"><a href="#">Food Republic Today</a></div>
-                    <div class="col-12 caseBurger"><a href="#">How-Tos</a></div>
-                    <div class="col-12 caseBurger"><a href="#">The Meal Plan</a></div>
-                    <div class="col-12 caseBurger"><a href="#">Recommended</a></div>
-                    <!-- menu Folow à la suite -->
-                    <div class="col-12 limite caseBurger"><a href="https://www.facebook.com/F.Republic"><img class="fb" src="img/fb-white.png" height="40px">Facebook</a></div>
-                    <div class="col-12 caseBurger"><a href="https://twitter.com/foodrepublic"><img class="twit" src="img/twitter-white.png" height="20px">Twitter</a></div>
-                    <div class="col-12 caseBurger"><a href="https://instagram.com/foodrepublic/"><img class="insta" src="img/instagram-white.png" height="20px">Instagram</a></div>
-                    <div class="col-12 caseBurger"><a href="htpps://plus.google.com/+FoodRepublic/posts"><img class="goop" src="img/googleplus-white.png" height="30px">Google Plus</a></div>
-                    <!-- menu Newsletter à la suite -->
-                    <div class="col-12 caseBurger" id="mailBurger"><a href="#">Get The Lastest</a></div>
+                <div class="col-12 caseBurger">
+                    <a href="#">Podcasts</a>
+                </div>
+                <div class="col-12 caseBurger">
+                    <a href="#">Food</a>
+                </div>
+                <div class="col-12 caseBurger">
+                    <a href="#">Drink</a>
+                </div>
+                <div class="col-12 caseBurger">
+                    <a href="#">Recipes</a>
+                </div>
+                <div class="col-12 caseBurger">
+                    <a href="#">Travel</a>
+                </div>
+                <div class="col-12 caseBurger">
+                    <a href="#">People</a>
+                </div>
+                <div class="col-12 caseBurger">
+                    <a href="#">Video</a>
+                </div>
+                <!-- menu2 à la suite -->
+                <div class="col-12 limite caseBurger">
+                    <a href="#">Food Republic Today</a>
+                </div>
+                <div class="col-12 caseBurger">
+                    <a href="#">How-Tos</a>
+                </div>
+                <div class="col-12 caseBurger">
+                    <a href="#">The Meal Plan</a>
+                </div>
+                <div class="col-12 caseBurger">
+                    <a href="#">Recommended</a>
+                </div>
+                <!-- menu Folow à la suite -->
+                <div class="col-12 limite caseBurger">
+                    <a href="https://www.facebook.com/F.Republic">
+                        <img class="fb" src="img/fb-white.png" height="40px">Facebook</a>
+                </div>
+                <div class="col-12 caseBurger">
+                    <a href="https://twitter.com/foodrepublic">
+                        <img class="twit" src="img/twitter-white.png" height="20px">Twitter</a>
+                </div>
+                <div class="col-12 caseBurger">
+                    <a href="https://instagram.com/foodrepublic/">
+                        <img class="insta" src="img/instagram-white.png" height="20px">Instagram</a>
+                </div>
+                <div class="col-12 caseBurger">
+                    <a href="htpps://plus.google.com/+FoodRepublic/posts">
+                        <img class="goop" src="img/googleplus-white.png" height="30px">Google Plus</a>
+                </div>
+                <!-- menu Newsletter à la suite -->
+                <div class="col-12 caseBurger" id="mailBurger">
+                    <a href="#">Get The Lastest</a>
                 </div>
             </div>
         </div>
-        <!-- banner -->
-        <div class="banner">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 bannerHaut"></div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-10 col-sm-8 bannerBas">
-                        <p class="ban1"><a href="#">Los Angeles</a></p>
-                        <p class="ban2"><a href="#">Los Angeles Bagel Culture gets a cream cheese infusion</a></p>
-                        <p class="ban3"><a href="#">Jess Kapadia </a>| March 2, 2018</p>
-                    </div>
+    </div>
+    <!-- banner -->
+    <div class="banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 bannerHaut"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-8 bannerBas">
+                    <p class="ban1">
+                        <a href="#"><img class="carorange" src="img/carre-orange.jpg">Los Angeles</a>
+                    </p>
+                    <p class="ban2">
+                        <a href="#">Los Angeles Bagel Culture gets a cream cheese infusion</a>
+                    </p>
+                    <p class="ban3">
+                        <a href="#">Jess Kapadia </a>| March 2, 2018</p>
                 </div>
             </div>
         </div>
+    </div>
 
 
     <script src="main.js"></script>
-    </body>
+</body>
+
 </html>

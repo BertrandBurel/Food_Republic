@@ -15,3 +15,17 @@ function displayBurger (){
 
 getBtn.addEventListener("click",displayBurger);
 
+/*
+//function navbar scroll
+window.onscroll= function(){
+    var latest = document.getElementById('latestCtn');
+    var navbar = document.getElementById(''); // à créer, et lui mettre display none par defaut.
+   
+    if(window.scrollY >= latest.offsetTop){
+    //quand la section latest arrive en haut de l'ecran !.
+      navbar.style.display = "block";
+    }else{
+      navbar.style.display= "none";
+    }
+  };
+*/

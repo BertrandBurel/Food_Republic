@@ -230,7 +230,7 @@ span{
     .search{
         width: 50px;
     }
-    .mailSearch{
+    .mailSearch a{
         display: none;
     }
 }

@@ -1,21 +1,30 @@
 var getBtn = document.getElementById("btnBurger");
 var menuBurger = document.getElementById("menuBurger");
 menuBurger.style.display = "none";
+var blockCloseBurger = document.getElementById("blockCloseBurger");
 
 var barMenu = document.getElementById("barreMenu");
 
 function displayBurger() {
     if (menuBurger.style.display === "none") {
         menuBurger.style.display = "block";
+        blockCloseBurger.style.display = "block";
         document.body.style.paddingLeft = "220px";
     } else if (menuBurger.style.display === "block") {
         menuBurger.style.display = "none";
+        blockCloseBurger.style.display = "none";
         document.body.style.paddingLeft = "0";
     }
 };
 
 getBtn.addEventListener("click", displayBurger);
 
+blockCloseBurger.addEventListener("click", function () {
+    if (menuBurger.style.display === "block") {
+        blockCloseBurger.style.display = "none";
+        displayBurger();
+    }
+})
 // fin de fonction burger
 
 // fonction display block social
@@ -40,6 +49,7 @@ function displaySocial() {
     }
 
 }
+
 // fin de fontion display block social
 
 blockCloseNav.addEventListener("click", function () {

@@ -515,8 +515,8 @@ span {
 }
 
 .share {
-    height: 10vw;
-    width: 10vw;
+    height: 30px;
+    width: 30px;
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -559,10 +559,6 @@ span {
     .latestArticle3 {
         height: 27vw;
     }
-    .share {
-        height: 2vw;
-        width: 2vw;
-    }
     .latestTextTitle {
         font-size: 0.8vw;
     }
@@ -573,7 +569,9 @@ span {
         font-size: 0.8vw;
     }
 }
+
 /* case fixe en bas de l'écran */
+
 #caseFixe {
     position: fixed;
     bottom: 0;
@@ -583,16 +581,18 @@ span {
     padding-top: 5px;
     border-top: 2px solid orange;
     background-color: white;
-    text-align: center; 
+    text-align: center;
     font-weight: bold;
     color: orange;
 }
-@media screen and (max-width: 810px){
+
+@media screen and (max-width: 810px) {
     #caseFixe {
         position: fixed;
         left: 35%;
     }
 }
+
 /* FIN de LATEST */
 
 #blockCloseNav {
@@ -661,3 +661,97 @@ span {
 }
 
 /* fin du menu social */
+
+/* recommanded */
+
+.dropbtn {
+    background-color: rgba(0, 0, 0, 0);
+    color: #666;
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    border: none;
+    height: 50px;
+    font-weight: bold;
+}
+
+.dropArrow {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin-left: 5px;
+    background-image: url("img/flecheDown.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.dropTitle {
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    left: 10;
+    z-index: 10;
+}
+
+.dropTitle h5 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-top: 3px solid orange;
+    width: 720px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    flex-direction: row;
+    margin-left: -400px;
+}
+
+.dropdown-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+}
+
+.dropdown-content li {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid silver;
+    width: 340px;
+    display: flex;
+    margin: 5px;
+}
+
+.dropdown-content a {
+    display: block;
+    height: 70px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.dropbtn:hover {
+    border-bottom: 2px solid orange;
+}
+
+.dropbtn:hover .dropArrow {
+    background-image: url("img/flecheUp.png");
+}
+
+/*fin de Recommanded*/

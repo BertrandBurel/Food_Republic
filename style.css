@@ -306,6 +306,10 @@ span {
     .banner {
         margin-top: 100px;
     }
+    .popArt1 {
+        max-width: 150%;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 905px) {
@@ -377,9 +381,11 @@ span {
 }
 
 .bannerBas {
+    border-top: 2px solid rgba(48, 48, 48, 0.9);
     background-color: rgba(48, 48, 48, 0.9);
     margin-top: -40px;
     padding-top: 10px;
+    margin-bottom: 50px;
 }
 
 .bannerBas:hover {
@@ -416,6 +422,16 @@ span {
 .ban2,
 .ban3 {
     margin: 0;
+}
+
+/* section LatestBanner*/
+.popArt1 {
+    background-image: url("img/bananaCake.jpg");
+    max-width: 78%;
+}
+.popArt2 {
+    background-image: url("img/tortillas.jpg");
+    max-width: 78%;
 }
 
 @media screen and (min-width: 800px) and (max-width: 1040px) {
@@ -515,8 +531,8 @@ span {
 }
 
 .share {
-    height: 10vw;
-    width: 10vw;
+    height: 30px;
+    width: 30px;
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -559,10 +575,6 @@ span {
     .latestArticle3 {
         height: 27vw;
     }
-    .share {
-        height: 2vw;
-        width: 2vw;
-    }
     .latestTextTitle {
         font-size: 0.8vw;
     }
@@ -573,11 +585,6 @@ span {
         font-size: 0.8vw;
     }
 }
-<<<<<<< HEAD
-
-.latest-part2 {
-    width: 100%;
-=======
 /* case fixe en bas de l'écran */
 #caseFixe {
     position: fixed;
@@ -597,7 +604,6 @@ span {
         position: fixed;
         left: 35%;
     }
->>>>>>> 3638d8c39edf63b9e2130db60a4b7160676ab619
 }
 /* FIN de LATEST */
 

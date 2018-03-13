@@ -380,6 +380,8 @@ span {
     background-color: rgba(48, 48, 48, 0.9);
     margin-top: -40px;
     padding-top: 10px;
+    margin-bottom: 50px;
+    border-top: 2px solid rgba(48, 48, 48, 0.9);
 }
 
 .bannerBas:hover {
@@ -416,6 +418,13 @@ span {
 .ban2,
 .ban3 {
     margin: 0;
+}
+
+.popArt1 {
+    background-image: url("img/bananaCake.jpg");
+}
+.popArt2 {
+    background-image: url("img/tortillas.jpg");
 }
 
 @media screen and (min-width: 800px) and (max-width: 1040px) {

@@ -145,6 +145,25 @@ body {
     height: 25px;
 }
 
+/* barre de recherche */
+#liSearchBar {
+    display: flex;
+    flex-direction: row;
+}
+.recherche {
+    z-index: 10;
+    width: 165px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-left: -40px;
+}
+#btnSearch {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+/* fin de barre de recherche */
+
 .follow {
     padding: 12px 5px 0 0;
     text-align: right;
@@ -335,6 +354,10 @@ span {
     justify-content: space-around;
     padding: 0 10% 0 10%;
     font-weight: bold;
+}
+
+#menuScroll a {
+    text-decoration: none;
 }
 
 #logofr {
@@ -593,6 +616,7 @@ span {
     text-align: center;
     font-weight: bold;
     color: orange;
+    z-index: 10;
 }
 
 @media screen and (max-width: 810px) {
@@ -605,7 +629,7 @@ span {
 /* FIN de LATEST */
 
 #blockCloseNav {
-    z-index: 0;
+    z-index: 9;
     position: fixed;
     top: 0;
     left: 0;
@@ -764,3 +788,4 @@ span {
 }
 
 /*fin de Recommanded*/
+

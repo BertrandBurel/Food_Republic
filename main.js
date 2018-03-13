@@ -71,7 +71,6 @@ window.onscroll = function () {
 
         if (window.innerWidth > 810) {
             navbar.style.display = "flex";
-
         } else if (window.innerWidth < 810) {
             barMenu.style.marginTop = "0";
         } else {
@@ -84,3 +83,27 @@ window.onscroll = function () {
 };
 
 // fin de fonction navbar scroll
+
+//search
+var eltLoupe = document.getElementsByClassName("loupeSearch")[0];
+var eltMail = document.getElementsByClassName("mailSearch")[0];
+var liLoupe = document.getElementById("liSearchBar");
+liLoupe.style.display = "none";
+var eltSearch = document.getElementsByClassName("search")[0];
+
+eltLoupe.addEventListener("click", function (){
+    eltMail.style.display = "none";
+    eltLoupe.style.display = "none";
+    liLoupe.style.display = "flex";
+    eltSearch.style.width = "200px";
+})
+
+var closeSearch = document.getElementById("closeSearch");
+
+closeSearch.addEventListener("click", function (){
+    eltSearch.style.width = "150px";
+    liLoupe.style.display = "none";
+    eltMail.style.display = "";
+    eltLoupe.style.display = "";
+})
+//fin de search

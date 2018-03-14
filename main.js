@@ -106,6 +106,7 @@ closeSearch.addEventListener("click", function () {
     eltMail.style.display = "";
     eltLoupe.style.display = "";
 })
+
 //fin de search
 var searchBurger = document.getElementById("searchBurger");
 searchBurger.style.display = "none";

@@ -148,10 +148,12 @@ body {
 }
 
 /* barre de recherche */
+
 #liSearchBar {
     display: flex;
     flex-direction: row;
 }
+
 .recherche {
     z-index: 10;
     width: 165px;
@@ -160,10 +162,12 @@ body {
     border-bottom: 1px solid black;
     margin-left: -40px;
 }
+
 #btnSearch {
     background-color: rgba(0, 0, 0, 0);
     border: none;
 }
+
 /* fin de barre de recherche */
 
 .follow {
@@ -338,6 +342,25 @@ span {
     }
 }
 
+#searchBurger {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 0 5px 0 10px;
+}
+
+#searchBurger input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#searchBurger button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
 /* fin menu burger */
 
 /* menu Scroll */
@@ -447,6 +470,7 @@ span {
 .popArt1 {
     background-image: url("img/bananaCake.jpg");
 }
+
 .popArt2 {
     background-image: url("img/tortillas.jpg");
 }
@@ -823,3 +847,37 @@ span {
     text-decoration: none;
 }
 /* Début partie citation */
+
+/* Début bandeau newsletter */
+.news {
+    background-image: url("img/fondNewsLetter.png");
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-size: cover;
+}
+.newsText {
+    color: white;
+    font-size: 20px;
+}
+.newsLetter {
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+.newsLetter form {
+    flex-wrap: nowrap;
+    width: 275px;
+}
+.newsletter #submit {
+    color: white;
+    background-color: orange;
+}
+@media screen and (max-width: 1040px) {
+    .newsletter {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+/* Début bandeau newsletter */

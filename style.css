@@ -460,7 +460,7 @@ span {
 /* section latest ci-dessous */
 
 .latestCtn {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .latestLigne {
@@ -607,7 +607,7 @@ span {
 #caseFixe {
     position: fixed;
     bottom: 0;
-    left: 44%;
+    left: 46%;
     height: 34px;
     width: 134px;
     padding-top: 5px;
@@ -622,7 +622,7 @@ span {
 @media screen and (max-width: 810px) {
     #caseFixe {
         position: fixed;
-        left: 35%;
+        left: 38%;
     }
 }
 

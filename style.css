@@ -325,10 +325,6 @@ span {
     .banner {
         margin-top: 100px;
     }
-    .popArt1 {
-        max-width: 150%;
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 905px) {

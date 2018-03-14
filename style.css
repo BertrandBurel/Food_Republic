@@ -337,6 +337,10 @@ span {
     font-weight: bold;
 }
 
+#menuScroll a {
+    text-decoration: none;
+}
+
 #logofr {
     height: 40px;
     width: 50px;
@@ -593,6 +597,7 @@ span {
     text-align: center;
     font-weight: bold;
     color: orange;
+    z-index: 10;
 }
 
 @media screen and (max-width: 810px) {
@@ -764,3 +769,34 @@ span {
 }
 
 /*fin de Recommanded*/
+
+/* Début partie citation */
+.citation {
+    font-weight: bold;
+    font-style: italic;
+    width: 100%;
+}
+.rangH {
+    text-align: center;
+    font-size: 24px;
+}
+.rangH a {
+    color: black;
+}
+.rangB a {
+    color: #666;
+    font-size: 16px;
+}
+.rangM {
+    font-size: 18px;
+    text-align: right;
+}
+.rangB {
+    text-align: right;
+    padding-bottom: 20px;
+
+}
+.rangH a, .rangB a {
+    text-decoration: none;
+}
+/* Début partie citation */

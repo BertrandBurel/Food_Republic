@@ -5,7 +5,9 @@
 body {
     overflow-x: hidden;
 }
-
+ .container-fluid {
+     margin-bottom: 50px;
+ }
 .ctnBack {
     z-index: 0;
     position: absolute;
@@ -427,7 +429,6 @@ span {
     background-color: rgba(48, 48, 48, 0.9);
     margin-top: -40px;
     padding-top: 10px;
-    margin-bottom: 50px;
     border-top: 2px solid rgba(48, 48, 48, 0.9);
 }
 
@@ -473,6 +474,9 @@ span {
 
 .popArt2 {
     background-image: url("img/tortillas.jpg");
+}
+.popArt3 {
+    background-image: url("img/meatBall.png");
 }
 
 @media screen and (min-width: 800px) and (max-width: 1040px) {
@@ -844,3 +848,37 @@ span {
     text-decoration: none;
 }
 /* Début partie citation */
+
+/* Début bandeau newsletter */
+.news {
+    background-image: url("img/fondNewsLetter.png");
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-size: cover;
+}
+.newsText {
+    color: white;
+    font-size: 20px;
+}
+.newsLetter {
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+.newsLetter form {
+    flex-wrap: nowrap;
+    width: 275px;
+}
+.newsletter #submit {
+    color: white;
+    background-color: orange;
+}
+@media screen and (max-width: 1040px) {
+    .newsletter {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+/* Début bandeau newsletter */

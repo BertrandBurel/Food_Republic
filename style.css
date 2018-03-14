@@ -146,10 +146,12 @@ body {
 }
 
 /* barre de recherche */
+
 #liSearchBar {
     display: flex;
     flex-direction: row;
 }
+
 .recherche {
     z-index: 10;
     width: 165px;
@@ -158,10 +160,12 @@ body {
     border-bottom: 1px solid black;
     margin-left: -40px;
 }
+
 #btnSearch {
     background-color: rgba(0, 0, 0, 0);
     border: none;
 }
+
 /* fin de barre de recherche */
 
 .follow {
@@ -336,6 +340,25 @@ span {
     }
 }
 
+#searchBurger {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 0 5px 0 10px;
+}
+
+#searchBurger input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#searchBurger button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
 /* fin menu burger */
 
 /* menu Scroll */
@@ -446,6 +469,7 @@ span {
 .popArt1 {
     background-image: url("img/bananaCake.jpg");
 }
+
 .popArt2 {
     background-image: url("img/tortillas.jpg");
 }
@@ -788,4 +812,3 @@ span {
 }
 
 /*fin de Recommanded*/
-

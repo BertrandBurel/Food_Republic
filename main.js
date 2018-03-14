@@ -91,7 +91,7 @@ var liLoupe = document.getElementById("liSearchBar");
 liLoupe.style.display = "none";
 var eltSearch = document.getElementsByClassName("search")[0];
 
-eltLoupe.addEventListener("click", function (){
+eltLoupe.addEventListener("click", function () {
     eltMail.style.display = "none";
     eltLoupe.style.display = "none";
     liLoupe.style.display = "flex";
@@ -100,10 +100,30 @@ eltLoupe.addEventListener("click", function (){
 
 var closeSearch = document.getElementById("closeSearch");
 
-closeSearch.addEventListener("click", function (){
+closeSearch.addEventListener("click", function () {
     eltSearch.style.width = "150px";
     liLoupe.style.display = "none";
     eltMail.style.display = "";
     eltLoupe.style.display = "";
 })
 //fin de search
+var searchBurger = document.getElementById("searchBurger");
+searchBurger.style.display = "none";
+var loupeBurger = document.getElementById("loupeBurger");
+var logoBurger = document.getElementById("logoBurger");
+
+loupeBurger.addEventListener("click", function () {
+    loupeBurger.style.display = "none";
+    searchBurger.style.display = "";
+    getBtn.style.display = "none";
+    logoBurger.style.display = "none";
+})
+
+var closeSearchBurger = document.getElementById("closeSearchBurger");
+
+closeSearchBurger.addEventListener("click", function () {
+    loupeBurger.style.display = "";
+    searchBurger.style.display = "none";
+    getBtn.style.display = "";
+    logoBurger.style.display = "";
+})

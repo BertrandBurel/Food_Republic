@@ -18,7 +18,9 @@
         <div class="ctnMenu">
             <nav>
                 <ul class="menu1" id="menu1">
-                    <a href="index.html"><img id="logo" src="img/food-republic.png" alt="logo du site" /></a>
+                    <a href="index.html">
+                        <img id="logo" src="img/food-republic.png" alt="logo du site" />
+                    </a>
                     <li>
                         <a href="#">
                             <span>Home</span>
@@ -57,7 +59,7 @@
                             </a>
                         </li>
                         <li id="liSearchBar">
-                            <input type="text" class="recherche" placeholder="Search">
+                            <input type="text" class="recherche" placeholder="Search" />
                             <button type="button" id="btnSearch">
                                 <img src="img/loupeOrange.png" width="25px">
                             </button>
@@ -158,8 +160,19 @@
         <button type="button" id="btnBurger">
             <img src="img/burger.png" alt="bouton menu burger" height="35px" width="35px" />
         </button>
-        <img id="logoMobile" src="img/food-republic.png" alt="logo du site" height="50px" width="50px" />
-        <img class="centerIcon" src="img/loupe.png" alt="search" height="35px" width="35px" />
+        <div id="logoBurger">
+            <img id="logoMobile" src="img/food-republic.png" alt="logo du site" height="50px" width="50px" />
+        </div>
+        <div id="loupeBurger">
+            <img class="centerIcon" src="img/loupe.png" alt="search" height="30px" width="30px" />
+        </div>
+        <div id="searchBurger">
+            <input type="text" placeholder="Search" />
+            <button type="button">
+                <img src="img/loupeOrange.png" width="30px">
+            </button>
+            <img id="closeSearchBurger" src="img/croix.png" width="25px" height="25px">
+        </div>
     </div>
     <!-- menuBurger s'affiche uniquement au format mobile -->
     <div id="blockCloseBurger"></div>
@@ -232,7 +245,9 @@
     <div id="menuScroll">
         <nav>
             <ul class="menu1">
-                <a href="index.html"><img id="logofr" src="img/logofr.png" alt="logo f r" /></a>
+                <a href="index.html">
+                    <img id="logofr" src="img/logofr.png" alt="logo f r" />
+                </a>
                 <li>
                     <a href="#">
                         <span>Home</span>

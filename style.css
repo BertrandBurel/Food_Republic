@@ -145,6 +145,25 @@ body {
     height: 25px;
 }
 
+/* barre de recherche */
+#liSearchBar {
+    display: flex;
+    flex-direction: row;
+}
+.recherche {
+    z-index: 10;
+    width: 165px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-left: -40px;
+}
+#btnSearch {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+/* fin de barre de recherche */
+
 .follow {
     padding: 12px 5px 0 0;
     text-align: right;
@@ -341,6 +360,10 @@ span {
     font-weight: bold;
 }
 
+#menuScroll a {
+    text-decoration: none;
+}
+
 #logofr {
     height: 40px;
     width: 50px;
@@ -386,10 +409,7 @@ span {
     margin-top: -40px;
     padding-top: 10px;
     margin-bottom: 50px;
-<<<<<<< HEAD
-=======
     border-top: 2px solid rgba(48, 48, 48, 0.9);
->>>>>>> d65af5469df95480752ac959ee326d00433fe463
 }
 
 .bannerBas:hover {
@@ -428,7 +448,6 @@ span {
     margin: 0;
 }
 
-<<<<<<< HEAD
 /* section LatestBanner*/
 .popArt1 {
     background-image: url("img/bananaCake.jpg");
@@ -437,13 +456,6 @@ span {
 .popArt2 {
     background-image: url("img/tortillas.jpg");
     max-width: 78%;
-=======
-.popArt1 {
-    background-image: url("img/bananaCake.jpg");
-}
-.popArt2 {
-    background-image: url("img/tortillas.jpg");
->>>>>>> d65af5469df95480752ac959ee326d00433fe463
 }
 
 @media screen and (min-width: 800px) and (max-width: 1040px) {
@@ -456,7 +468,7 @@ span {
 /* section latest ci-dessous */
 
 .latestCtn {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .latestLigne {
@@ -603,7 +615,7 @@ span {
 #caseFixe {
     position: fixed;
     bottom: 0;
-    left: 44%;
+    left: 46%;
     height: 34px;
     width: 134px;
     padding-top: 5px;
@@ -612,19 +624,20 @@ span {
     text-align: center;
     font-weight: bold;
     color: orange;
+    z-index: 10;
 }
 
 @media screen and (max-width: 810px) {
     #caseFixe {
         position: fixed;
-        left: 35%;
+        left: 38%;
     }
 }
 
 /* FIN de LATEST */
 
 #blockCloseNav {
-    z-index: 0;
+    z-index: 9;
     position: fixed;
     top: 0;
     left: 0;
@@ -634,7 +647,7 @@ span {
 }
 
 #socialNav {
-    z-index: 1;
+    z-index: 10;
     position: fixed;
     top: 40%;
     left: 40%;
@@ -783,3 +796,4 @@ span {
 }
 
 /*fin de Recommanded*/
+

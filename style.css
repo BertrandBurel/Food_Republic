@@ -5,7 +5,9 @@
 body {
     overflow-x: hidden;
 }
-
+ .container-fluid {
+     margin-bottom: 50px;
+ }
 .ctnBack {
     z-index: 0;
     position: absolute;
@@ -403,7 +405,6 @@ span {
     background-color: rgba(48, 48, 48, 0.9);
     margin-top: -40px;
     padding-top: 10px;
-    margin-bottom: 50px;
     border-top: 2px solid rgba(48, 48, 48, 0.9);
 }
 
@@ -448,6 +449,9 @@ span {
 }
 .popArt2 {
     background-image: url("img/tortillas.jpg");
+}
+.popArt3 {
+    background-image: url("img/meatBall.png");
 }
 
 @media screen and (min-width: 800px) and (max-width: 1040px) {

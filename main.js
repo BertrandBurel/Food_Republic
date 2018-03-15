@@ -10,7 +10,9 @@ function displayBurger() {
         menuBurger.style.display = "block";
         blockCloseBurger.style.display = "block";
         document.body.style.paddingLeft = "220px";
+
     } else if (menuBurger.style.display === "block") {
+
         menuBurger.style.display = "none";
         blockCloseBurger.style.display = "none";
         document.body.style.paddingLeft = "0";
@@ -21,6 +23,7 @@ getBtn.addEventListener("click", displayBurger);
 
 blockCloseBurger.addEventListener("click", function () {
     if (menuBurger.style.display === "block") {
+
         blockCloseBurger.style.display = "none";
         displayBurger();
     }
@@ -128,3 +131,32 @@ closeSearchBurger.addEventListener("click", function () {
     getBtn.style.display = "";
     logoBurger.style.display = "";
 })
+//fin de search burger
+
+//debut mailBox
+var mailBox = document.getElementById("mailBox");
+mailBox.style.display = "none";
+var mailCtnClose = document.getElementById("mailCtnClose");
+mailCtnClose.style.display = "none";
+var mailSearch = document.getElementsByClassName("mailSearch")[0];
+
+mailSearch.addEventListener("click", displayMailBox);
+
+var mailBoxClose = document.getElementById("mailBoxClose");
+
+mailBoxClose.addEventListener("click", hiddenMailBox);
+
+var mailCtnClose = document.getElementById("mailCtnClose");
+
+mailCtnClose.addEventListener("click", hiddenMailBox);
+
+function displayMailBox() {
+         mailBox.style.display = "";
+        mailCtnClose.style.display = "";
+}
+
+function hiddenMailBox() {
+    mailBox.style.display = "none";
+    mailCtnClose.style.display = "none";
+}
+//fin mailBox

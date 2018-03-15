@@ -145,6 +145,7 @@ body {
 
 .loupeSearch img {
     height: 25px;
+    margin-right: 0px;
 }
 
 /* barre de recherche */
@@ -874,4 +875,69 @@ span {
         text-align: center;
     }
 }
-/* Début bandeau newsletter */
+/* fin bandeau newsletter */
+#mailCtnClose {
+    z-index: 99;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(90, 70, 70, 0.5);
+}
+
+#mailBox {
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 330px;
+    margin-top: -165px;
+    width: 620px;
+    margin-left: -310px;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#bannerMailBox {
+    height: 20px;
+    margin-top: 10px;
+    width: 100%;
+    background-image: url("img/fondNews.svg");  
+}
+
+#paraMailBox {
+    width: 70%;
+    text-align: center;
+    font-size: 1.6em;
+    line-height: 120%;
+}
+
+#mailBoxSign {
+    background-color: orange;
+    border: none;
+    color: white;
+    height: 35;
+    width: 80;
+    font-weight: bold;
+}
+#mailBoxText {
+    width: 300px;
+    height: 35px;
+    padding-left: 20px;
+}
+#mailBoxClose {
+    z-index: 11;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 23px;
+    width: 23px;
+    background-image: url("img/croix.png");
+    background-position: center;
+    background-size: cover;
+}

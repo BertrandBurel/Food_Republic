@@ -635,7 +635,8 @@ span {
 #caseFixe {
     position: fixed;
     bottom: 0;
-    left: 46%;
+    left: 50%;
+    margin-left: -67px;
     height: 34px;
     width: 134px;
     padding-top: 5px;
@@ -645,13 +646,6 @@ span {
     font-weight: bold;
     color: orange;
     z-index: 10;
-}
-
-@media screen and (max-width: 810px) {
-    #caseFixe {
-        position: fixed;
-        left: 38%;
-    }
 }
 
 /* FIN de LATEST */
